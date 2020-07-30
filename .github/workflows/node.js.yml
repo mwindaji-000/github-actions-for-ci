@@ -23,7 +23,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [linux, windows-2016]
+        os: [ubuntu-latest, windows-latest]
         node-version: [8.x, 10.x]
 
     steps:
@@ -38,3 +38,4 @@ jobs:
         npm test
       env:
         CI: true
+    
